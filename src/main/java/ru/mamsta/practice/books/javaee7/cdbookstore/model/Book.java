@@ -1,14 +1,24 @@
 package ru.mamsta.practice.books.javaee7.cdbookstore.model;
 
 public class Book {
-    
+
     private String title;
-    
-    private Float price;
-    
+
+    private Float  price;
+
     private String description;
-    
+
     private String number;
+
+    public Book() {
+
+    }
+
+    public Book(final String title, final Float price, final String description) {
+        this.title = title;
+        this.price = price;
+        this.description = description;
+    }
 
     public String getTitle() {
         return title;
